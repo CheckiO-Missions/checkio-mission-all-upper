@@ -24,7 +24,7 @@ TESTS = {
         },
         {
             "input": [''],
-            "answer": True,
+            "answer": False,
         }
     ],
     "Extra": [
