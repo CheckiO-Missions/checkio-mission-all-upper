@@ -1,19 +1,22 @@
 "use strict";
 
-function sumTwo(a, b) {
-    // sums two passed arguments
-
+function isAllUpper(a) {
     // your code here
-    return 0;
+    return undefined;
 }
 
 var assert = require('assert');
+
 if (!global.is_checking) {
     console.log('Example:');
-    console.log(sumTwo(3, 2));
+    console.log(isAllUpper('ALL UPPER'));
 
-    // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(sumTwo(3, 2), 5);
-    assert.equal(sumTwo(5, 7), 12);
+    // These "asserts" are used for self-checking
+    assert.equal(isAllUpper('ALL UPPER'), true);
+    assert.equal(isAllUpper('all lower'), false);
+    assert.equal(isAllUpper('mixed UPPER and lower'), false);
+    assert.equal(isAllUpper(''), true);
+
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
+    

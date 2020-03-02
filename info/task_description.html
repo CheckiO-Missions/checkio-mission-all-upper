@@ -1,20 +1,16 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    Check if a given string has all symbols in upper case. (Empty string should return True)
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input: </strong> String.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> Boolean. 
 </p>
 
 
@@ -25,28 +21,21 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumTwo(2, 3) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">isAllUpper('ALL UPPER') == true
+isAllUpper('all lower') == false
+isAllUpper('mixed UPPER and lower') == false
+isAllUpper('') == true
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(2, 3) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">is_all_upper('ALL UPPER') == True
+is_all_upper('all lower') == False
+is_all_upper('mixed UPPER and lower') == False
+is_all_upper('') == True
 </pre>
 {% endif %}
 </div>
 
-
-<!-- Here you can explain how it can be used in development -->
-<!-- The section is optional -->
-<p class="for_info_only">
-
-    <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
-</p>
-
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
 <p>
     <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
+    <i>a-z, A-Z, 1-9 and space</i>
 </p>
