@@ -33,6 +33,10 @@ TESTS = {
             "answer": False,
         },
         {
+            "input": ['     '],
+            "answer": False,
+        },
+        {
             "input": ['WORLD'],
             "answer": True,
         }
