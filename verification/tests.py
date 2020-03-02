@@ -37,6 +37,19 @@ TESTS = {
             "answer": False,
         },
         {
+            "input": ['123'],
+            "answer": False,
+        },
+        {
+            "input": ['DIGITS123'],
+            "answer": False,
+        },
+        {
+            "input": [''DIGITS 123 ''],
+            "answer": False,
+        },
+
+        {
             "input": ['WORLD'],
             "answer": True,
         }
