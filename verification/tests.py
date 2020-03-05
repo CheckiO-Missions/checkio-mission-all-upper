@@ -34,15 +34,15 @@ TESTS = {
         },
         {
             "input": ['     '],
-            "answer": False,
+            "answer": True,
         },
         {
             "input": ['123'],
-            "answer": False,
+            "answer": True,
         },
         {
             "input": ['DIGITS123'],
-            "answer": False,
+            "answer": True,
         },
 
         {
