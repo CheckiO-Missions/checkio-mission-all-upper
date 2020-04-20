@@ -1,22 +1,18 @@
-"use strict";
+import assert from "assert";
 
-function isAllUpper(a) {
+function isAllUpper(text: string): boolean {
     // your code here
-    return undefined;
+    return false;
 }
 
-var assert = require('assert');
+console.log('Example:');
+console.log(isAllUpper('ALL UPPER'));
 
-if (!global.is_checking) {
-    console.log('Example:');
-    console.log(isAllUpper('ALL UPPER'));
+// These "asserts" are used for self-checking
+assert.equal(isAllUpper('ALL UPPER'), true);
+assert.equal(isAllUpper('all lower'), false);
+assert.equal(isAllUpper('mixed UPPER and lower'), false);
+assert.equal(isAllUpper(''), true);
 
-    // These "asserts" are used for self-checking
-    assert.equal(isAllUpper('ALL UPPER'), true);
-    assert.equal(isAllUpper('all lower'), false);
-    assert.equal(isAllUpper('mixed UPPER and lower'), false);
-    assert.equal(isAllUpper(''), true);
-
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
