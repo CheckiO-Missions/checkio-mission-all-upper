@@ -1,0 +1,41 @@
+<!-- Describe task in general -->
+
+<p>
+    Проверить все ли символы в строке являются заглавными. Если строка пустая или в ней нет букв - функция должна вернуть True.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Строка.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Логический тип. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Пример:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">isAllUpper('ALL UPPER') == true
+isAllUpper('all lower') == false
+isAllUpper('mixed UPPER and lower') == false
+isAllUpper('') == true
+</pre>
+{% else %}
+<pre class="brush: python">is_all_upper('ALL UPPER') == True
+is_all_upper('all lower') == False
+is_all_upper('mixed UPPER and lower') == False
+is_all_upper('') == True
+</pre>
+{% endif %}
+</div>
+
+<p>
+    <strong>Условия:</strong>
+    <i>a-z, A-Z, 1-9 и пробелы</i>
+</p>
