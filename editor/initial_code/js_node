@@ -14,6 +14,8 @@ assert.equal(isAllUpper('all lower'), false);
 assert.equal(isAllUpper('mixed UPPER and lower'), false);
 assert.equal(isAllUpper(''), true);
 assert.equal(isAllUpper('    '), true);
+assert.equal(isAllUpper('444'), true);
+assert.equal(isAllUpper('55 55 5'), true);
 
 console.log("Coding complete? Click 'Check' to earn cool rewards!");
     

@@ -25,6 +25,14 @@ TESTS = {
         {
             "input": [''],
             "answer": True,
+        },
+        {
+            "input": ['444'],
+            "answer": True,
+        },
+        {
+            "input": ['55 55 5 '],
+            "answer": True,
         }
     ],
     "Extra": [
@@ -41,7 +49,11 @@ TESTS = {
             "answer": True,
         },
         {
-            "input": ['DIGITS123'],
+            "input": ['123 34 '],
+            "answer": True,
+        },
+        {
+            "input": ['45 DIG ee 5 ITS1 23'],
             "answer": True,
         },
 
