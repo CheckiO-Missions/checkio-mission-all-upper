@@ -53,7 +53,7 @@ TESTS = {
             "answer": True,
         },
         {
-            "input": ['45 DIG ee 5 ITS1 23'],
+            "input": ['45 DIG EE 5 ITS1 23'],
             "answer": True,
         },
 
