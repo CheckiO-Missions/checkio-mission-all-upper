@@ -1,0 +1,41 @@
+<!-- Describe task in general -->
+
+<p>
+    Sprawdź, czy wszystkie znaki zapisane są wielkimi literami. Jeśli string jest pusty lub nie zawiera żadnej litery - funkcja powinna zwrócić True.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Wejście: </strong> String.
+</p>
+
+<p>
+    <strong>Wyjście: </strong> Boolean. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Przykład:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">isAllUpper('ALL UPPER') == true
+isAllUpper('all lower') == false
+isAllUpper('mixed UPPER and lower') == false
+isAllUpper('') == true
+</pre>
+{% else %}
+<pre class="brush: python">is_all_upper('ALL UPPER') == True
+is_all_upper('all lower') == False
+is_all_upper('mixed UPPER and lower') == False
+is_all_upper('') == True
+</pre>
+{% endif %}
+</div>
+
+<p>
+    <strong>Warunek wstępny:</strong>
+    <i>Tekst zawiera litery a-z, A-Z, cyfry oraz spacje.</i>
+</p>
