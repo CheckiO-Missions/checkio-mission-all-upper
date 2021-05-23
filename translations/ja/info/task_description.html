@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p>
+    指定された文字列がすべて大文字で構成されているかをチェックします。空文字列、もしくは英文字が 1 つも含まれていない場合、関数は True を返してください。
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> str / String
+</p>
+
+<p>
+    <strong>Output: </strong> bool / Boolean
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">isAllUpper('ALL UPPER') == true
+isAllUpper('all lower') == false
+isAllUpper('mixed UPPER and lower') == false
+isAllUpper('') == true
+isAllUpper('444') == true
+isAllUpper('55 55 5') == true
+</pre>
+{% else %}
+<pre class="brush: python">is_all_upper('ALL UPPER') == True
+is_all_upper('all lower') == False
+is_all_upper('mixed UPPER and lower') == False
+is_all_upper('') == True
+is_all_upper('444') == True
+is_all_upper('55 55 5') == True
+</pre>
+{% endif %}
+</div>
+
+<p>
+    <strong>制約:</strong>
+    <i>a-z, A-Z, 1-9 およびスペース</i>
+</p>
