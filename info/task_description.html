@@ -20,23 +20,7 @@
         <strong>Example:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">isAllUpper('ALL UPPER') == true
-isAllUpper('all lower') == false
-isAllUpper('mixed UPPER and lower') == false
-isAllUpper('') == true
-isAllUpper('444') == true
-isAllUpper('55 55 5') == true
-</pre>
-{% else %}
-<pre class="brush: python">is_all_upper('ALL UPPER') == True
-is_all_upper('all lower') == False
-is_all_upper('mixed UPPER and lower') == False
-is_all_upper('') == True
-is_all_upper('444') == True
-is_all_upper('55 55 5') == True
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p>
