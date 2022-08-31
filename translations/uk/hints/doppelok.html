@@ -1,0 +1,50 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        Я не знаю, як розпочати вирішення цієї місії
+    </div>
+    <div class="answer">
+        Це дуже легка задача насправді. Для її вирішення почитай про метод
+        <a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a>
+        (<a href='https://www.w3schools.com/python/ref_string_upper.asp'>приклад</a> ). Цей метод перетворить усі літери рядка
+        на великі.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Нічого не працює. SOS
+    </div>
+    <div class="answer">
+        Гаразд, тобі потрібно використати метод str.upper() до заданого рядка та порівняти результат з оригіналом.
+        <pre class="brush: python">
+text = "ALL UPPER"
+print(text.upper() == text)
+
+# output
+True
+        </pre>
+        Або:
+        <pre class="brush: python">
+text = "All upper"
+print(text.upper() == text)
+
+# output
+False
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Не хочу здаватись, допоможи!
+    </div>
+    <div class="answer">
+        Тобі залишилось обернути цей код у вираз функції.
+        <pre class="brush: python">
+def is_all_upper(text: str) -> bool:
+    return text.upper() == text
+        </pre>
+    </div>
+</div>
+
+
+</body>

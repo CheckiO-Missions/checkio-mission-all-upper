@@ -1,17 +1,6 @@
-//Dont change it
-//Dont change it
-requirejs(['ext_editor_io', 'jquery_190'],
+requirejs(['ext_editor_io2', 'jquery_190'],
     function (extIO, $) {
-        
-        var $tryit;
-
-        var io = new extIO({
-            multipleArguments: true,
-            functions: {
-                python: 'is_all_upper',
-                js: 'isAllUpper'
-            }
-        });
+        var io = new extIO({});
         io.start();
     }
 );

@@ -1,0 +1,49 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        I don't know how to start solving this mission
+    </div>
+    <div class="answer">
+        This is a very easy task actually. To solve it, read about the
+        <a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a> method
+        (<a href='https://www.w3schools.com/python/ref_string_upper.asp'>example</a> ). This method will convert all letters of the string to uppercase.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Nothing works. SOS
+    </div>
+    <div class="answer">
+        Okay, you need to use the str.upper() method on the given string and compare the result with the original string.
+        <pre class="brush: python">
+text = "ALL UPPER"
+print(text.upper() == text)
+
+# output
+True
+        </pre>
+        Or:
+        <pre class="brush: python">
+text = "All upper"
+print(text.upper() == text)
+
+# output
+False
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I don't want to give up, help!
+    </div>
+    <div class="answer">
+        All you have to do is wrap this code in a function expression.
+        <pre class="brush: python">
+def is_all_upper(text: str) -> bool:
+    return text.upper() == text
+        </pre>
+    </div>
+</div>
+
+
+</body>

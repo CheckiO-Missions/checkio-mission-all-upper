@@ -1,0 +1,25 @@
+{% comment %}New initial code template{% endcomment %}
+{% block env %}{% endblock env %}
+
+{% block start %}
+def is_all_upper(text: str) -> bool:
+    # your code here
+    return False
+
+
+{% endblock start %}
+
+{% block example %}
+print('Example:')
+print(is_all_upper('ALL UPPER'))
+{% endblock %}
+
+{% block tests %}
+{% for t in tests %}
+assert {% block call %}is_all_upper({{t.input|p_args}})
+{% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
+{% endblock %}
+
+{% block final %}
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+{% endblock final %}
