@@ -1,0 +1,91 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <i>I have no idea how to start solving this mission.</i>
+    </div>
+    <div class="answer">
+        <p>
+            💡 This mission is very easy actually. You need to create a new string from the initial, by converting it into upper case (all characters become uppercase) and compare the new one with the initial. If they are equal, it means the initial string is already all upper.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>Ok, what should I start from?</i>
+    </div>
+    <div class="answer">
+        <p>
+            Read about <a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a> method.
+        </p>
+        <pre class="brush: javascript">
+text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>
+           What to do next? 
+        </i>
+    </div>
+    <div class="answer">
+        <p>
+            Now just compare the initial string and a new one with <a target="_blank" href="https://www.w3schools.com/js/js_operators.asp">== comparison operator</a>.
+        </p>
+        <pre class="brush: javascript">
+text == text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>So, how my final solution should look like?</i>
+    </div>
+    <div class="answer">
+        <p>
+            You just need to wrap your code into function expression and return the result of the comparison.
+        </p>
+        <p>Here is the whole solution:</p>
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return text == text.toUpperCase();
+}
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Javascript Hero!</i>
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            In this solution regular expression is used to check absence of lowercase letters.
+        </p>
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return !/[a-z]/.test(text);
+}
+        </pre>
+        <p>
+            This solution is like yours, but uses anonymous function and ternary operator.
+        </p>
+        <pre class="brush: javascript">
+var isAllUpper = (text: string): boolean =>
+text === text.toUpperCase() ? true : false
+        </pre>
+        <p><b>Click "Best solutions" at mission menu and see a lot of other interesting solutions!</b></p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>Thanks! I know and understand more now! Everything works fine!</i>
+    </div>
+    <div class="answer">
+        👍 Glad to hear it!
+    </div>
+</div>
+</body>
