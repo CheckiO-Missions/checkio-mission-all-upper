@@ -1,46 +1,62 @@
 <body data-author="Doppelok">
 <div class="question-answer">
     <div class="question">
-        Я не знаю, як розпочати вирішення цієї місії
+        <p>
+            Я не знаю, як розпочати вирішення цієї місії.
+        </p>
     </div>
     <div class="answer">
-        Це дуже легка задача насправді. Для її вирішення почитай про метод
-        <a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a>
-        (<a href='https://www.w3schools.com/python/ref_string_upper.asp'>приклад</a> ). Цей метод перетворить усі літери рядка
-        на великі.
+        <p>
+            Це дуже легка задача насправді. Для її вирішення почитай про метод <a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a> (<a href='https://www.w3schools.com/python/ref_string_upper.asp'>приклад</a>). Цей метод перетворить усі літери рядка на великі.
+        </p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Нічого не працює. SOS
+        <p>
+            Нічого не працює. SOS
+        </p>
     </div>
     <div class="answer">
-        Гаразд, тобі потрібно використати метод str.upper() до заданого рядка та порівняти результат з оригіналом.
+        <p>
+            Гаразд, тобі потрібно використати метод <b class="code">str.upper()</b> до заданого рядка та порівняти результат з оригіналом.
+        </p>
         <pre class="brush: python">
 text = "ALL UPPER"
 print(text.upper() == text)
-
-# output
-True
         </pre>
+        <div class="output">
+            <p>Output:</p>
+            <pre>
+True        
+            </pre>
+        </div>
         Або:
         <pre class="brush: python">
 text = "All upper"
 print(text.upper() == text)
-
-# output
-False
         </pre>
+        <div class="output">
+            <p>Output:</p>
+            <pre>
+False        
+            </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Не хочу здаватись, допоможи!
+        <p>
+            Не хочу здаватись, допоможи!
+        </p>
     </div>
     <div class="answer">
-        Тобі залишилось обернути цей код у вираз функції.
+        <p>
+            Тобі залишилось обернути цей код у вираз функції.
+        </p>
         <pre class="brush: python">
 def is_all_upper(text: str) -> bool:
+
     return text.upper() == text
         </pre>
     </div>

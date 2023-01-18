@@ -33,7 +33,7 @@ TESTS = {
         {
             "input": ['55 55 5 '],
             "answer": True,
-        }
+        },
     ],
     "Extra": [
         {
@@ -56,10 +56,9 @@ TESTS = {
             "input": ['45 DIG EE 5 ITS1 23'],
             "answer": True,
         },
-
         {
             "input": ['WORLD'],
             "answer": True,
-        }
+        },
     ]
 }
