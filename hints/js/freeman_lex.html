@@ -46,12 +46,14 @@ text == text.toUpperCase()
             You just need to wrap your code into function expression and return the result of the comparison.
         </p>
         <p>Here is the whole solution:</p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 function isAllUpper(text: string): boolean {
 
     return text == text.toUpperCase();
 }
         </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
@@ -64,19 +66,23 @@ function isAllUpper(text: string): boolean {
         <p>
             In this solution regular expression is used to check absence of lowercase letters.
         </p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 function isAllUpper(text: string): boolean {
 
     return !/[a-z]/.test(text);
 }
         </pre>
+        </div>
         <p>
             This solution is like yours, but uses anonymous function and ternary operator.
         </p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 var isAllUpper = (text: string): boolean =>
 text === text.toUpperCase() ? true : false
         </pre>
+        </div>
         <p><b>Click "Best solutions" at mission menu and see a lot of other interesting solutions!</b></p>
     </div>
 </div>
