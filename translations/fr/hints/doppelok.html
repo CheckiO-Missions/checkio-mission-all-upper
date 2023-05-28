@@ -1,0 +1,66 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Je ne sais pas comment commencer à résoudre cette mission.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Il s'agit en fait d'une tâche très facile. Pour la résoudre, lisez la méthode <a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a> (<a href='https://www.w3schools.com/python/ref_string_upper.asp'>example</a>). Cette méthode convertit toutes les lettres de la chaîne en majuscules.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Rien ne fonctionne. SOS
+        </p>
+    </div>
+    <div class="answer">
+       <p> 
+            Vous devez utiliser la méthode <b class="code">str.upper()</b> sur la chaîne donnée et comparer le résultat avec la chaîne d'origine </p>. <p>
+       </p>
+       <pre class="brush: python">
+text = "ALL UPPER"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>Résultat:</p>
+            <pre>
+True        
+            </pre>
+        </div>
+        Ou:
+       <pre class="brush: python">
+text = "All upper"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>Sortie:</p>
+            <pre>
+False        
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Je ne veux pas abandonner, aidez-moi!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Tout ce que vous avez à faire est d'envelopper ce code dans une expression de fonction.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_all_upper(text: str) -> bool:
+
+    return text.upper() == text
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
