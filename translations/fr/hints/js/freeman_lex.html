@@ -1,0 +1,97 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Je n'ai aucune idée de la manière de commencer à résoudre cette mission.</p>
+    </div>
+    <div class="answer">
+        <p>
+            💡 Cette mission est en fait très facile. Vous devez créer une nouvelle chaîne à partir de l'initiale, en la convertissant en majuscules (tous les caractères deviennent majuscules) et comparer la nouvelle avec l'initiale. Si elles sont égales, cela signifie que la chaîne initiale est déjà entièrement en majuscules.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Ok, par quoi dois-je commencer?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Consultez la méthode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+           Que faire ensuite? 
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Il suffit maintenant de comparer la chaîne initiale et une nouvelle chaîne avec <a target="_blank" href="https://www.w3schools.com/js/js_operators.asp">== comparison operator</a>.
+        </p>
+        <pre class="brush: javascript">
+text == text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Alors, à quoi devrait ressembler ma solution finale?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Il vous suffit d'envelopper votre code dans une expression de fonction et de renvoyer le résultat de la comparaison.
+        </p>
+        <p>Voici la solution complète:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return text == text.toUpperCase();
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Montrez-moi d'autres solutions!<br />
+        parce que je veux être un vrai 🥇 Javascript Hero!</p>
+    </div>
+    <div class="answer">
+        <p>Bien sûr, prenez-le!</p>
+        <p>
+            Dans cette solution, une expression régulière est utilisée pour vérifier l'absence de lettres minuscules.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return!/[a-z]/.test(text);
+}
+        </pre>
+        </div>
+        <p>
+            Cette solution est similaire à la vôtre, mais elle utilise une fonction anonyme et un opérateur ternaire.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+var isAllUpper = (text: string): boolean =>
+text === text.toUpperCase()? true: false
+        </pre>
+        </div>
+        <p><b>Click "Best solutions" at mission menu and see a lot of other interesting solutions!</b></p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Merci beaucoup! Je comprends mieux maintenant! Tout fonctionne bien!</p>
+    </div>
+    <div class="answer">
+        👍 Heureux de l'apprendre!
+    </div>
+</div>
+</body>
