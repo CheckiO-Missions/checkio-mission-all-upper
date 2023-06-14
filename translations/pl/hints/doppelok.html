@@ -1,0 +1,66 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Nie wiem, jak zacząć rozwiązywać tę misję.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            W rzeczywistości jest to bardzo łatwe zadanie. Aby je rozwiązać, proszę zapoznać się z metodą <a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a> (<a href='https://www.w3schools.com/python/ref_string_upper.asp'>example</a>). Metoda ta zamieni wszystkie litery ciągu na wielkie.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Nic nie działa. SOS
+        </p>
+    </div>
+    <div class="answer">
+       <p> 
+            Proszę użyć metody <b class="code">str.upper()</b> na podanym ciągu i porównać wynik z oryginalnym ciągiem.
+       </p>
+       <pre class="brush: python">
+text = "ALL UPPER"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>Wynik:</p>
+            <pre>
+True        
+            </pre>
+        </div>
+        Lub:
+       <pre class="brush: python">
+text = "All upper"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>Wyjście:</p>
+            <pre>
+False        
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Nie chcę się poddać, proszę o pomoc!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Wszystko, co musi Pan zrobić, to zawinąć ten kod w wyrażenie funkcji.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_all_upper(text: str) -> bool:
+
+    return text.upper() == text
+        </pre>
+        </div>
+    </div>
+</div>
+</body>

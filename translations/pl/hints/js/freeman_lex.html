@@ -1,0 +1,97 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Nie mam pojęcia, jak zacząć rozwiązywać tę misję.</p>
+    </div>
+    <div class="answer">
+        <p>
+            w rzeczywistości ta misja jest bardzo prosta. Musi Pan utworzyć nowy ciąg znaków z początkowego, zamieniając go na wielkie litery (wszystkie znaki stają się wielkie) i porównać nowy ciąg z początkowym. Jeśli są one równe, oznacza to, że początkowy ciąg jest już górny.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Ok, od czego powinienem zacząć?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Proszę przeczytać o metodzie <a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+           Co robić dalej? 
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Teraz proszę porównać początkowy ciąg znaków i nowy ciąg znaków z <a target="_blank" href="https://www.w3schools.com/js/js_operators.asp">== comparison operator</a>.
+        </p>
+        <pre class="brush: javascript">
+text == text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Jak więc powinno wyglądać moje ostateczne rozwiązanie?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Wystarczy zawinąć kod w wyrażenie funkcyjne i zwrócić wynik porównania.
+        </p>
+        <p>Oto całe rozwiązanie:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return text == text.toUpperCase();
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Proszę pokazać mi więcej rozwiązań!<br />
+        bo chcę być prawdziwym 🥇 bohaterem Javascriptu!</p>
+    </div>
+    <div class="answer">
+        <p>Jasne, proszę pobrać!</p>
+        <p>
+            W tym rozwiązaniu wyrażenie regularne jest używane do sprawdzania braku małych liter.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return!/[a-z]/.test(text);
+}
+        </pre>
+        </div>
+        <p>
+            To rozwiązanie jest podobne do Pańskiego, ale wykorzystuje funkcję anonimową i operator trójargumentowy.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+var isAllUpper = (text: string): boolean =>
+text === text.toUpperCase()? true: false
+        </pre>
+        </div>
+        <p>Proszę kliknąć <b>Best Solutions</b> w menu misji i zobaczyć wiele innych ciekawych rozwiązań!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa dobrze!</p>
+    </div>
+    <div class="answer">
+        miło mi to słyszeć!
+    </div>
+</div>
+</body>
