@@ -1,23 +1,23 @@
 <!-- Describe task in general -->
 
 <p>
-    Sprawdź, czy wszystkie znaki zapisane są wielkimi literami. Jeśli string jest pusty lub nie zawiera żadnej litery - funkcja powinna zwrócić True.
+    Proszę sprawdzić, czy podany ciąg znaków zawiera wszystkie symbole pisane wielkimi literami. Jeśli ciąg jest pusty lub nie ma w nim żadnej litery - funkcja powinna zwrócić <b>{% if is_js %}t{% else %}T{% endif %}rue</b>.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Wejście: </strong> String.
+   <strong>Wejście:</strong> Ciąg znaków <span>(str{% if is_js %}ing{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Wyjście: </strong> Boolean. 
+   <strong>Wyjście:</strong> Wartość logiczna <span>(bool{% if is_js %}ean{% endif %})</span>. 
 </p>
 
 
 <!-- Give some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Przykład:</strong>
+        <strong>Przykłady:</strong>
     </p>
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
@@ -25,5 +25,5 @@
 
 <p>
     <strong>Warunek wstępny:</strong>
-    <i>Tekst zawiera litery a-z, A-Z, cyfry oraz spacje.</i>
+    <i>a-z, A-Z, 1-9 i spacje</i>
 </p>
