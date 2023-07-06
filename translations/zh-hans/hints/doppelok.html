@@ -1,0 +1,66 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            我不知道如何开始解决这个任务。
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            这其实是一个非常容易的任务。要解决这个问题，请阅读<a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a> 方法(<a href='https://www.w3schools.com/python/ref_string_upper.asp'>example</a>)。这个方法将把字符串的所有字母转换为大写字母。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            没有什么作用。SOS
+        </p>
+    </div>
+    <div class="answer">
+       <p> 
+            好的，你需要在给定的字符串上使用<b class="code">str.upper()</b> 方法，并将结果与原始字符串进行比较。
+       </p>
+       <pre class="brush: python">
+text = "ALL UPPER"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>输出：</p>
+            <pre>
+True        
+            </pre>
+        </div>
+        或：
+       <pre class="brush: python">
+text = "All upper"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>输出：</p>
+            <pre>
+False        
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            我不想放弃，请帮助我!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            你所要做的就是把这段代码包在一个函数表达式中。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_all_upper(text: str) -> bool:
+
+    return text.upper() == text
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
