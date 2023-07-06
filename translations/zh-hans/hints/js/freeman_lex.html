@@ -1,0 +1,97 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>我不知道如何开始解决这个任务。</p>
+    </div>
+    <div class="answer">
+        <p>
+            这个任务其实很简单。你需要从初始值创建一个新的字符串，将其转换为大写字母（所有字符都变成大写字母），然后将新的字符串与初始值进行比较。如果它们相等，说明初始字符串已经是大写字母了。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>好吧，我应该从什么开始呢？</p>
+    </div>
+    <div class="answer">
+        <p>
+            请阅读<a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a> 方法。
+        </p>
+        <pre class="brush: javascript">
+text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+           接下来该怎么做？ 
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            现在只需比较初始字符串和一个新的字符串，<a target="_blank" href="https://www.w3schools.com/js/js_operators.asp">== comparison operator</a> 。
+        </p>
+        <pre class="brush: javascript">
+text == text.toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>那么，我的最终解决方案应该是什么样子的呢？</p>
+    </div>
+    <div class="answer">
+        <p>
+            你只需要把你的代码包装成函数表达式并返回比较的结果。
+        </p>
+        <p>下面是整个解决方案：</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return text == text.toUpperCase();
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>告诉我更多的解决方案!<br />
+        因为我想成为一个真正的🥇 Javascript英雄!</p>
+    </div>
+    <div class="answer">
+        <p>当然，抓住它!</p>
+        <p>
+            在这个解决方案中，正则表达式被用来检查是否有小写字母。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isAllUpper(text: string): boolean {
+
+    return!/[a-z]/.test(text);
+}
+        </pre>
+        </div>
+        <p>
+            这个解决方案和你的一样，但使用了匿名函数和三元操作符。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+var isAllUpper = (text: string): boolean =>
+text === text.toUpperCase()? true: false
+        </pre>
+        </div>
+        <p>点击任务菜单上的<b>Best Solutions</b> ，可以看到很多其他有趣的解决方案!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>谢谢!我现在知道并理解了更多!一切工作都很顺利!</p>
+    </div>
+    <div class="answer">
+        👍很高兴听到这个消息!
+    </div>
+</div>
+</body>
