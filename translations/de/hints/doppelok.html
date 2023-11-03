@@ -1,0 +1,66 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Ich weiß nicht, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Das ist eigentlich eine sehr einfache Aufgabe. Um sie zu lösen, lesen Sie über die Methode <a href='https://docs.python.org/3.10/library/stdtypes.html?highlight=str%20upper#str.upper'>str.upper()</a> (<a href='https://www.w3schools.com/python/ref_string_upper.asp'>example</a>). Diese Methode wandelt alle Buchstaben des Strings in Großbuchstaben um.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Nichts funktioniert. SOS
+        </p>
+    </div>
+    <div class="answer">
+       <p>
+            Okay, Sie müssen die Methode <b class="code">str.upper()</b> auf die angegebene Zeichenfolge anwenden und das Ergebnis mit der ursprünglichen Zeichenfolge vergleichen.
+       </p>
+       <pre class="brush: python">
+text = "ALL UPPER"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>Ausgabe:</p>
+            <pre>
+True        
+            </pre>
+        </div>
+        Oder:
+       <pre class="brush: python">
+text = "All upper"
+print(text.upper() == text)
+        </pre>
+        <div class="output">
+            <p>Ausgabe:</p>
+            <pre>
+False        
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Ich will nicht aufgeben, Hilfe!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Alles, was Sie tun müssen, ist, diesen Code in einen Funktionsausdruck zu verpacken.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_all_upper(text: str) -> bool:
+
+    return text.upper() == text
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
