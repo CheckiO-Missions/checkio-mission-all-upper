@@ -1,0 +1,29 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p>
+    Überprüfen Sie, ob eine gegebene Zeichenkette alle Symbole in Großbuchstaben enthält. Wenn die Zeichenkette leer ist oder keinen Buchstaben enthält, sollte die Funktion <b>{% if is_js %}t{% else %}T{% endif %}rue</b>.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Eine Zeichenkette <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ein logischer Wert <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<p>
+    <strong>Vorbedingung:</strong>
+    <i>a-z, A-Z, 1-9 und Leerzeichen</i>
+</p>
